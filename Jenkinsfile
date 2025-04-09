@@ -12,7 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the project...'
-                sh './mvnw clean package' // or 'mvn clean package' if not using wrapper
+                sh 'mvn clean package' // or 'mvn clean package' if not using wrapper
             }
         }
     }
